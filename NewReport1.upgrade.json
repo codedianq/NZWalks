@@ -1,0 +1,3892 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 10.0"
+  },
+  "analysisStartTime": "2026-05-03T15:55:03.0211463Z",
+  "analysisEndTime": "2026-05-03T15:55:03.1885333Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 2,
+      "incidents": 147,
+      "effort": 147
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 147,
+        "Optional": 0,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 1,
+        "Api": 146
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "NZWalks.API\\NZWalks.API.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 147,
+      "ruleInstances": [
+        {
+          "incidentId": "784a54d4-7d93-4afc-9a2b-ebdbf334c6e4",
+          "ruleId": "Project.0002",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\NZWalks.API.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0"
+          }
+        },
+        {
+          "incidentId": "e7adb2f4-7948-441f-a84d-f90c7f21289d",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022[controller]\u0022)",
+              "protected": "T:Microsoft.AspNetCore.Mvc.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "Route(\u0022[controller]\u0022)",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.RouteAttribute",
+            "label": "T:Microsoft.AspNetCore.Mvc.RouteAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.routeattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "0dddb206-caf3-4792-810a-1f186483aad1",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "M:System.Random.Next(System.Int32,System.Int32)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "M:System.Random.Next(System.Int32,System.Int32)",
+            "label": "M:System.Random.Next(System.Int32,System.Int32)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random.next",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "dc56d624-0019-4cb9-9be1-894e2eba1d5b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "114c9a60-125d-4f65-8088-1468e6d08469",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "M:System.DateTime.AddDays(System.Double)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "M:System.DateTime.AddDays(System.Double)",
+            "label": "M:System.DateTime.AddDays(System.Double)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.datetime.adddays",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "403eb4f8-208a-4b42-b1cb-5b7c449ee03a",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "09644383-e8be-470f-8c1b-16bdc4384f51",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Linq.Enumerable"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Linq.Enumerable",
+            "label": "T:System.Linq.Enumerable",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.linq.enumerable",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f3f59358-d14b-4811-8627-cc238a94cabb",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "e43ca593-2495-4620-833a-64de37f3191f",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "08d5553a-e4b9-467b-a6e7-8cb9f4c714e7",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "ae4596bc-d88b-4e64-9db0-dc2450ef9813",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 41
+          }
+        },
+        {
+          "incidentId": "6f1f1ed3-0ee5-4282-8bc0-45fce32d39c8",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "=\u003E 32 \u002B (int)(TemperatureC / 0.5556)",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "=\u003E 32 \u002B (int)(TemperatureC / 0.5556)",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 32
+          }
+        },
+        {
+          "incidentId": "aed1981f-5304-499f-b6a0-5fb0d49ca877",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "57c5d78f-3d9a-4ca4-a67e-dac2d18bd39f",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddControllers();",
+              "protected": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddControllers();",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "label": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder.services",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "68842e5f-95fe-4f07-a828-e6fcb91929da",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var builder = WebApplication.CreateBuilder(args);",
+              "protected": "M:Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(System.String[])"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var builder = WebApplication.CreateBuilder(args);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(System.String[])",
+            "label": "M:Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(System.String[])",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication.createbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 0,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "1351206e-8385-4791-9adc-24994f527f33",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Random"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Random",
+            "label": "T:System.Random",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "996d672e-0250-4ccd-8bcf-80ecf2b20c99",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "P:System.Random.Shared"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "P:System.Random.Shared",
+            "label": "P:System.Random.Shared",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random.shared",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "83cbdea5-efba-4319-9545-4890e5ce905b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3d1a1ea5-7cbe-4fa7-b27a-ff7c58631004",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Random"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Random",
+            "label": "T:System.Random",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "10df9699-82c2-43a9-b06d-f1ce4f3279dc",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "P:System.Random.Shared"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "P:System.Random.Shared",
+            "label": "P:System.Random.Shared",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random.shared",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4463367d-735d-4382-845c-703ede406e7c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0ec56ccc-f8b9-4d36-af03-b2defd10b0ed",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "3f10ed07-10a5-41cf-ad60-7079e45122be",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "3d62cb7e-13a9-4cf7-af0e-27690cf0860d",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "f7cbb850-8283-4393-9abe-df9d43ef92d9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSwagger();",
+              "protected": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseSwagger();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 14,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "ca041235-9a41-4517-97bd-0c4fd81dc83a",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddSwaggerGen();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddSwaggerGen();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "08cefa26-7d0b-4e62-9eb3-cc75ddd4d4e1",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var builder = WebApplication.CreateBuilder(args);",
+              "protected": "T:Microsoft.AspNetCore.Builder.WebApplicationBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var builder = WebApplication.CreateBuilder(args);",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.WebApplicationBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.WebApplicationBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 0,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "6bc8f1dc-e637-44f4-8de6-3d421b31af8c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Random"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Random",
+            "label": "T:System.Random",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "be04fab6-0d91-41dc-8def-985a44bf20b7",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateTime"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateTime",
+            "label": "T:System.DateTime",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.datetime",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c888ebd3-db7d-45b6-b772-35394a2002eb",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "89fd7f6b-d17c-4a73-b972-9d273f29b205",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string? RegionImageUrl",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "public string? RegionImageUrl",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "ec4c5870-f521-4e79-91ff-9c22546278f4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "02999327-f974-4bf7-ad84-9ccb84aa8b80",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "65cca9ab-3e58-43a5-a2c6-39f60715b02b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "fb21702d-b2c1-4502-acbf-33e98a75bf13",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 38
+          }
+        },
+        {
+          "incidentId": "2d1977ab-d55a-42ce-af2c-a13efd1ad252",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public DateOnly Date",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "public DateOnly Date",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "12556da7-da08-4979-979b-a56c6e32b1a0",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+              "protected": "T:System.Boolean"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+            "protectedSnippet": "T:System.Boolean",
+            "label": "T:System.Boolean",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.boolean",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "df6dcbea-e687-497c-975e-6b028d00e3f1",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var builder = WebApplication.CreateBuilder(args);",
+              "protected": "T:Microsoft.AspNetCore.Builder.WebApplication"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var builder = WebApplication.CreateBuilder(args);",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.WebApplication",
+            "label": "T:Microsoft.AspNetCore.Builder.WebApplication",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication",
+                "isCustom": false
+              }
+            ],
+            "line": 0,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "32a496fc-2c25-4447-9f99-1997497ec22a",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d5ea47af-3573-4ebd-8c18-34d564cb31f2",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "M:System.DateOnly.FromDateTime(System.DateTime)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "M:System.DateOnly.FromDateTime(System.DateTime)",
+            "label": "M:System.DateOnly.FromDateTime(System.DateTime)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly.fromdatetime",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "55ade040-7710-4b28-a60f-ac74816437bf",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Linq.Enumerable"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Linq.Enumerable",
+            "label": "T:System.Linq.Enumerable",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.linq.enumerable",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "839e5600-992a-4644-b4d4-5df5fa090282",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "381750de-b534-4846-8eb5-196309b85dfe",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor",
+            "label": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.controllerbase",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "fa8f7a15-036e-4384-9715-9c388123d52b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "286fc3a3-9031-4a89-b6bb-7296c05d0db4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "bf4b6a51-19f9-419e-9835-ec26c4b352a7",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string Name",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "public string Name",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "d5cf5d4f-e98d-4991-8250-b599e7a05c3c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "954050a0-6eb4-414b-b28e-87db1e5ea8d4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 38
+          }
+        },
+        {
+          "incidentId": "dea5919f-c023-4964-9c10-fff539fd938b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAuthorization();",
+              "protected": "M:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions.UseAuthorization(Microsoft.AspNetCore.Builder.IApplicationBuilder)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseAuthorization();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions.UseAuthorization(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "label": "M:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions.UseAuthorization(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.authorizationappbuilderextensions.useauthorization",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "9d96e6f4-950c-42a3-ae91-8fa3741fbae6",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddControllers();",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddControllers();",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "fb3b1072-de02-4a38-bdd4-6da537ca4f88",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "810ae2c7-f078-4920-8215-5009bfcdc2d5",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "4ac30453-efe2-403d-a506-0955f2df064d",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "fa67a3c8-cec5-4aeb-ad15-52fce2b8cf04",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Guid Id",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "public Guid Id",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8628337b-e7a1-4ff2-be72-a5b21e54049f",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.MapControllers();",
+              "protected": "T:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.MapControllers();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions",
+            "label": "T:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.controllerendpointroutebuilderextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "9772e9c0-f857-4d9d-9b9f-3221db237d33",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAuthorization();",
+              "protected": "T:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseAuthorization();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions",
+            "label": "T:Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.authorizationappbuilderextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "feb39908-e2a8-4a16-84d2-c76da6381247",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseHttpsRedirection();",
+              "protected": "M:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseHttpsRedirection();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "label": "M:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection",
+                "isCustom": false
+              }
+            ],
+            "line": 18,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "c980ecb5-9f65-4e57-9d7b-e50f63d5ce1f",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddEndpointsApiExplorer();",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions.AddEndpointsApiExplorer(Microsoft.Extensions.DependencyInjection.IServiceCollection)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddEndpointsApiExplorer();",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions.AddEndpointsApiExplorer(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions.AddEndpointsApiExplorer(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.endpointmetadataapiexplorerservicecollectionextensions.addendpointsapiexplorer",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "6266e963-4754-4ac0-8f00-65c478972e4a",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddControllers();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IMvcBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddControllers();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IMvcBuilder",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IMvcBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "241596ab-7175-4a2e-9274-dbfa69811186",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Double"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Double",
+            "label": "T:System.Double",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.double",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "24877cca-91dc-4868-9989-4f7614db0b1e",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "ee2acd22-e5d6-4c80-8442-39496868249b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public int TemperatureC",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "public int TemperatureC",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c91c099a-802e-475d-b691-0cf3a46eb9c9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+              "protected": "P:Microsoft.AspNetCore.Builder.WebApplication.Environment"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Builder.WebApplication.Environment",
+            "label": "P:Microsoft.AspNetCore.Builder.WebApplication.Environment",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication.environment",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "501d8099-d375-4134-8adc-81c81b74610c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var app = builder.Build();",
+              "protected": "T:Microsoft.AspNetCore.Builder.WebApplication"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var app = builder.Build();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.WebApplication",
+            "label": "T:Microsoft.AspNetCore.Builder.WebApplication",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "61b36e20-260e-4228-b8dc-adf14766b97d",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddSwaggerGen();",
+              "protected": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddSwaggerGen();",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "label": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder.services",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "d247fec9-efe6-4d0b-96bb-bf40964d2db9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddEndpointsApiExplorer();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddEndpointsApiExplorer();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "8f1d7854-3b93-4a2d-acee-38dc6642da32",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddControllers();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddControllers();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "d07ff926-dc0d-404b-862c-73e9264dbb20",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a26ff6e4-0f39-4c40-a336-a0ef1f27e0c8",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 41
+          }
+        },
+        {
+          "incidentId": "151d3e2d-c8e4-463f-8015-ff76e1a95c30",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "af90f71d-de9f-4dc0-a2c9-e39f7517aec9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "887815ec-6397-4caa-afd9-fe843b27f4d9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public int TemperatureF",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "public int TemperatureF",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8b91fb0d-5e32-4d41-9977-b462d7149bac",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.MapControllers();",
+              "protected": "M:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.MapControllers();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)",
+            "label": "M:Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.controllerendpointroutebuilderextensions.mapcontrollers",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "ea282ce8-3218-4fd6-a2ec-b0d3a4abf1ce",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+              "protected": "T:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+            "protectedSnippet": "T:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+            "label": "T:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostenvironmentenvextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "5586956b-f2c0-4f59-a78a-9010965463c5",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddControllers();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddControllers();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "96d3a90f-4ee0-48a9-b20f-9b80283abe86",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet(Name = \u0022GetWeatherForecast\u0022)",
+              "protected": "T:Microsoft.AspNetCore.Mvc.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "HttpGet(Name = \u0022GetWeatherForecast\u0022)",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.HttpGetAttribute",
+            "label": "T:Microsoft.AspNetCore.Mvc.HttpGetAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.httpgetattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "4e3504ae-b78d-443b-bae9-32fe3f9256a5",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "8b6f4036-4b37-436d-a3cc-95edb5229621",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Random"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Random",
+            "label": "T:System.Random",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f4847e80-7c04-4d57-8326-72ccecb77158",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string Code",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "public string Code",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "7a212b25-dd20-4804-939d-a85cee92bb80",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "7ab9f0e0-481e-432e-a1f6-6cef5a8fbcb6",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "c4e73594-d21c-4e68-951d-e8ea7d0f1da4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string Description",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public string Description",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "862f5768-5949-4146-9d6c-0968fd24f3f4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var builder = WebApplication.CreateBuilder(args);\r\n\r\n// Add services to the container.\r\n\r\nbuilder.Services.AddControllers();\r\n// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle\r\nbuilder.Services.AddEndpointsApiExplorer();\r\nbuilder.Services.AddSwaggerGen();\r\n\r\nvar app = builder.Build();\r\n\r\n// Configure the HTTP request pipeline.\r\nif (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}\r\n\r\napp.UseHttpsRedirection();\r\n\r\napp.UseAuthorization();\r\n\r\napp.MapControllers();\r\n\r\napp.Run();\r\n",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var builder = WebApplication.CreateBuilder(args);\r\n\r\n// Add services to the container.\r\n\r\nbuilder.Services.AddControllers();\r\n// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle\r\nbuilder.Services.AddEndpointsApiExplorer();\r\nbuilder.Services.AddSwaggerGen();\r\n\r\nvar app = builder.Build();\r\n\r\n// Configure the HTTP request pipeline.\r\nif (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}\r\n\r\napp.UseHttpsRedirection();\r\n\r\napp.UseAuthorization();\r\n\r\napp.MapControllers();\r\n\r\napp.Run();\r\n",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 0,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "0973e19e-dcc4-4f1b-9491-cd5d21df9d26",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseHttpsRedirection();",
+              "protected": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseHttpsRedirection();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 18,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "6489a417-87ad-4cf0-b30b-c8ae14fc0b06",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddEndpointsApiExplorer();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddEndpointsApiExplorer();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.endpointmetadataapiexplorerservicecollectionextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "6c8bee3f-8334-452d-a3aa-e1ae60f977d7",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 29
+          }
+        },
+        {
+          "incidentId": "96e9b29d-9d35-43de-bd47-2cc723a1f7b6",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Guid RegionId",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public Guid RegionId",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "698c7759-4236-4e12-b338-e2f31d4a0b8e",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Guid DifficultyId",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public Guid DifficultyId",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "9ed60608-3bb7-453e-90c1-823364b6e4a4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Double"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Double",
+            "label": "T:System.Double",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.double",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "32c7d06e-c3e6-452e-b17c-114da773c832",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 29
+          }
+        },
+        {
+          "incidentId": "84cb2767-562d-4276-8f17-a27d9c5e487b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 25
+          }
+        },
+        {
+          "incidentId": "e5163cdd-0231-47d3-bebb-66d919429808",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string? Summary",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "public string? Summary",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8b17dbc2-362c-4003-af32-83684e707d1e",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 39
+          }
+        },
+        {
+          "incidentId": "9bd39d1b-d30b-4406-b924-3c15fe8e6320",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.MapControllers();",
+              "protected": "T:Microsoft.AspNetCore.Builder.ControllerActionEndpointConventionBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.MapControllers();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.ControllerActionEndpointConventionBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.ControllerActionEndpointConventionBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.controlleractionendpointconventionbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 22,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "214c2a59-08ad-49d2-967a-773b938e5157",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseHttpsRedirection();",
+              "protected": "T:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseHttpsRedirection();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions",
+            "label": "T:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions",
+                "isCustom": false
+              }
+            ],
+            "line": 18,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "8f8e0e30-6763-438e-8065-5bdc3be3d7b6",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSwaggerUI();",
+              "protected": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseSwaggerUI();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "327cda73-8aa4-4e70-bb17-6339024a757e",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddEndpointsApiExplorer();",
+              "protected": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddEndpointsApiExplorer();",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "label": "P:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder.services",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "0e27d6c5-c33f-4462-963e-3b417a42b88b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 13,
+            "column": 44
+          }
+        },
+        {
+          "incidentId": "7b653f32-8bd7-4dcc-930f-f6cfe9adc291",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string Name",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "public string Name",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "cc635d46-5bea-4a0b-9098-4e7b08728519",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 39
+          }
+        },
+        {
+          "incidentId": "5f6f5f6c-7daf-4f91-bcb5-8be9c80dc4e9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var app = builder.Build();",
+              "protected": "M:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "var app = builder.Build();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build",
+            "label": "M:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder.build",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "6955d359-99df-40ee-90df-0b4faf9feccf",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddEndpointsApiExplorer();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddEndpointsApiExplorer();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "b7b0a7eb-690b-4093-8ca3-535ab27437e1",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ApiController",
+              "protected": "M:Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "ApiController",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor",
+            "label": "M:Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.apicontrollerattribute.apicontrollerattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "44142872-dbbc-48ed-bfcf-39e400897f16",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "P:System.Array.Length"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "P:System.Array.Length",
+            "label": "P:System.Array.Length",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.array.length",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "94671d62-862d-4ba5-a61b-41405243ffc9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateTime"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateTime",
+            "label": "T:System.DateTime",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.datetime",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "222ef3dc-f6ff-46ff-a7ea-5f0fc113be23",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "11a349f2-0688-497b-8a88-7e3e9841287c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.Linq.Enumerable"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.Linq.Enumerable",
+            "label": "T:System.Linq.Enumerable",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.linq.enumerable",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e3e3706e-1db6-4fb7-a1ed-d0c62ce788e5",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Guid Id",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "public Guid Id",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "5f30188d-482d-4590-92a8-13bb300aa1ca",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "0d0bd6cc-9931-4c1c-925b-f5151953fa05",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "ed7eba7a-6fbe-41ba-bba1-7212f6ad1537",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddSwaggerGen();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "builder.Services.AddSwaggerGen();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "label": "T:Microsoft.Extensions.DependencyInjection.IServiceCollection",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "a06778b9-e20f-4321-b48e-7cbdbc8a4372",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ApiController",
+              "protected": "T:Microsoft.AspNetCore.Mvc.ApiControllerAttribute"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "ApiController",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.ApiControllerAttribute",
+            "label": "T:Microsoft.AspNetCore.Mvc.ApiControllerAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.apicontrollerattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "ca1b93e7-423e-4d0f-928b-d2f4cf990168",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ControllerBase",
+              "protected": "T:Microsoft.AspNetCore.Mvc.ControllerBase"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "ControllerBase",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.ControllerBase",
+            "label": "T:Microsoft.AspNetCore.Mvc.ControllerBase",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "a675379b-00f2-400a-8e26-dcbf5f0316d2",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "83bffe2c-edec-4787-a282-19b8b621bf30",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 31
+          }
+        },
+        {
+          "incidentId": "81c1dab7-4567-4eff-80e5-1441341d2362",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 38
+          }
+        },
+        {
+          "incidentId": "bccefa05-4296-4091-9034-a2d6c90d79c2",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "2597b22b-c322-4449-93c1-b61c6ec5d1b4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAuthorization();",
+              "protected": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.UseAuthorization();",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "label": "T:Microsoft.AspNetCore.Builder.IApplicationBuilder",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "204033bd-b78f-4099-b212-6a8d4baa8fd8",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+              "protected": "M:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+            "protectedSnippet": "M:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)",
+            "label": "M:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostenvironmentenvextensions.isdevelopment",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "f01fd341-5cfc-4aa0-be10-54e46d37addd",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet(Name = \u0022GetWeatherForecast\u0022)",
+              "protected": "M:Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "HttpGet(Name = \u0022GetWeatherForecast\u0022)",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor",
+            "label": "M:Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.httpgetattribute.httpgetattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "955fa293-6f5d-41ea-9ff0-3625f206f50b",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "P:System.DateTime.Now"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "P:System.DateTime.Now",
+            "label": "P:System.DateTime.Now",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.datetime.now",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "97f6ee12-a91f-435f-9311-3f5d50dee4bf",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "M:System.Linq.Enumerable.Range(System.Int32,System.Int32)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "M:System.Linq.Enumerable.Range(System.Int32,System.Int32)",
+            "label": "M:System.Linq.Enumerable.Range(System.Int32,System.Int32)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.linq.enumerable.range",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "921f8c74-eaea-4c70-9af5-18b8c005d8b4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "4b35984b-3e2a-4785-96ed-f7dbe0684ccc",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 25
+          }
+        },
+        {
+          "incidentId": "d8e7903f-2d11-4d1a-8fd3-8a3c9e5e5bd8",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 9,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "24134984-d24d-49e6-b79c-d72ba64d5a05",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string Name",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public string Name",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6230c28f-31b5-4d75-9d57-63db20127ecf",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public Guid Id",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public Guid Id",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "2ef24f46-5f7b-4291-978e-f8897cddb8d0",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TemperatureC",
+              "protected": "T:System.Int32"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "TemperatureC",
+            "protectedSnippet": "T:System.Int32",
+            "label": "T:System.Int32",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.int32",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 46
+          }
+        },
+        {
+          "incidentId": "267f89e1-156f-48d6-bf2a-87eeb2e30ae3",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "27bfbf13-3b40-4b94-911c-c5491ad81170",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "if (app.Environment.IsDevelopment())\r\n{\r\n    app.UseSwagger();\r\n    app.UseSwaggerUI();\r\n}",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iwebhostenvironment",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "79c94ea8-2853-4315-8aa8-035fd4605f34",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 29
+          }
+        },
+        {
+          "incidentId": "4c14f740-655a-4569-a7cc-96bcbbc81005",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string? WalkImageUrl",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public string? WalkImageUrl",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "040a0f3d-9d30-4bb8-9d48-3d85c6d58514",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.Guid"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.Guid",
+            "label": "T:System.Guid",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.guid",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 25
+          }
+        },
+        {
+          "incidentId": "385c68a0-d6e5-42a9-b632-7b5c52157f66",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 30
+          }
+        },
+        {
+          "incidentId": "080195b4-31da-4c54-afb6-b42a36a35a45",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 33
+          }
+        },
+        {
+          "incidentId": "8e071f50-62c2-4dc9-8f14-6e88861bc6f4",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "M:Microsoft.AspNetCore.Builder.WebApplication.Run(System.String)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Program.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.WebApplication.Run(System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.WebApplication.Run(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication.run",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "a2e2733b-0091-4122-b87d-06016dbe5f6c",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022[controller]\u0022)",
+              "protected": "M:Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "Route(\u0022[controller]\u0022)",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)",
+            "label": "M:Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.routeattribute.routeattribute",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "6ca9523e-d258-48e6-9369-2e18548abff3",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "M:System.Random.Next(System.Int32)"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "M:System.Random.Next(System.Int32)",
+            "label": "M:System.Random.Next(System.Int32)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.random.next",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "41b1c002-906f-4c74-bc88-9538d43bbc28",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+              "protected": "T:System.DateTime"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "return Enumerable.Range(1, 5).Select(index =\u003E new WeatherForecast\r\n            {\r\n                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),\r\n                TemperatureC = Random.Shared.Next(-20, 55),\r\n                Summary = Summaries[Random.Shared.Next(Summaries.Length)]\r\n            })\r\n            .ToArray();",
+            "protectedSnippet": "T:System.DateTime",
+            "label": "T:System.DateTime",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.datetime",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ff27535c-aea4-48b3-983e-580c4e48afc9",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+              "protected": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
+            "snippet": "public WeatherForecastController(ILogger\u003CWeatherForecastController\u003E logger)\r\n        {\r\n            _logger = logger;\r\n        }",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor",
+            "label": "M:Microsoft.AspNetCore.Mvc.ControllerBase.#ctor",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.controllerbase",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "00f384c3-51b3-4959-83bf-8813b01ff063",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Region.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 34
+          }
+        },
+        {
+          "incidentId": "74d1c52a-e4ad-49cd-ad98-9a208b7691df",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 14,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "483f8074-3653-4b18-add2-9cc0e2542993",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "set;",
+              "protected": "T:System.Void"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "set;",
+            "protectedSnippet": "T:System.Void",
+            "label": "T:System.Void",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.void",
+                "isCustom": false
+              }
+            ],
+            "line": 8,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "094cd1b3-b998-41b9-9e88-f7c75d174c01",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public double LengthInKm",
+              "protected": "T:System.Double"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "public double LengthInKm",
+            "protectedSnippet": "T:System.Double",
+            "label": "T:System.Double",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.double",
+                "isCustom": false
+              }
+            ],
+            "line": 7,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "46973ecb-606f-49a9-b877-4e9ff1e3b4ba",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Walk.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 6,
+            "column": 36
+          }
+        },
+        {
+          "incidentId": "b0da4abc-4739-46e7-8f74-9df849b9bf72",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.String"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.String",
+            "label": "T:System.String",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.string",
+                "isCustom": false
+              }
+            ],
+            "line": 5,
+            "column": 29
+          }
+        },
+        {
+          "incidentId": "6b987b92-43d8-4435-9301-4b213277221a",
+          "ruleId": "Api.0001",
+          "projectPath": "NZWalks.API\\NZWalks.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "get;",
+              "protected": "T:System.DateOnly"
+            },
+            "kind": "File",
+            "path": "NZWalks.API\\WeatherForecast.cs",
+            "snippet": "get;",
+            "protectedSnippet": "T:System.DateOnly",
+            "label": "T:System.DateOnly",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/system.dateonly",
+                "isCustom": false
+              }
+            ],
+            "line": 4,
+            "column": 31
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API does not exist in the selected version of .NET. See breaking changes documentation for alternative or replacement functionality.",
+      "label": "API does not exist",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
