@@ -32,5 +32,17 @@ namespace NZWalks.API.Controllers
             return Ok(walkDto);
         }
         #endregion
+
+        #region GET ALL WALKS
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var walksDomain = await walkRepository.GetAllAsync();
+
+            var walksDto = mapper.Map<List<WalkDto>>(walksDomain);
+
+            return Ok(walksDto);
+        }
+        #endregion
     }
 }
