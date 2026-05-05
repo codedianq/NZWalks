@@ -24,5 +24,17 @@ namespace NZWalks.API.Repositories
         {
             return await dbContext.Walks.Include("Difficulty").Include("Region").ToListAsync();
         }
+
+        public async Task<Walk?> GetById(Guid id)
+        {
+            var existingWalk = await dbContext.Walks.Include("Difficulty").Include("Region").FirstOrDefaultAsync(x => x.Id == id);
+
+            if (existingWalk == null)
+            {
+                return null;
+            }
+
+            return existingWalk;
+        }
     }
 }
