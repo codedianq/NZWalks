@@ -50,7 +50,27 @@ namespace NZWalks.API.Controllers
         [Route("{id:guid}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var walkDomain = await walkRepository.GetById(id);
+            var walkDomain = await walkRepository.GetByIdAsync(id);
+
+            if (walkDomain == null)
+            {
+                return NotFound();
+            }
+
+            var walkDto = mapper.Map<WalkDto>(walkDomain);
+
+            return Ok(walkDto);
+        }
+        #endregion
+
+        #region UPDATE WALK
+        [HttpPut]
+        [Route("{id:guid}")]
+        public async Task<IActionResult> Update([FromBody] UpdateWalkRequestDto updateWalkRequestDto, [FromRoute] Guid id)
+        {
+            var walkDomain = mapper.Map<Walk>(updateWalkRequestDto);
+
+            walkDomain = await walkRepository.UpdateAsync(walkDomain, id);
 
             if (walkDomain == null)
             {
